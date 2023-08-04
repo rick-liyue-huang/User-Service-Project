@@ -6,11 +6,11 @@ provider:
   runtime: nodejs16.x
 
 functions:
-  api:
-    handler: index.handler
+  signup:
+    handler: app/handler.signup
     events:
       - httpApi:
-          path: /
+          path: /signup
           method: get
 
 plugins:
